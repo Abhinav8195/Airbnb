@@ -1,0 +1,25 @@
+.place-card {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .place-card:hover {
+    transform: scale(1.05); /* Increase the size slightly on hover */
+  }
+  
+  .place-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .place-card:hover .place-info {
+    opacity: 1; /* Show the place info when hovering */
+  }
+  
